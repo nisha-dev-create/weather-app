@@ -1,0 +1,85 @@
+    * {
+      box-sizing: border-box;
+      font-family: fantasy;
+    }
+ 
+    /* Body background uses colour, image pattern, repeat, position, and attachment */
+    body {
+      background-color: #346e84;
+      background-image: url(clouds-removebg-preview.png);
+      background-size: 40px 40px;
+      background-repeat: repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+ 
+    h1 {
+      font-size: 36px;
+      color: white;
+    }
+ 
+    .subtitle {
+      font-size: 18px;
+      color: #f0f8ff;
+    }
+ 
+    .weather-card {
+      width: 400px;
+      border: 3px solid white;
+      border-radius: 20px;
+      background-image: url(stormy\ day.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+ 
+    .weather-icon {
+      font-size: 70px;
+      animation: floatCloud 3s infinite alternate;
+    }
+ 
+    #temperature {
+      font-size: 48px;
+      font-weight: bold;
+      color: #262e45;
+    }
+ 
+    .details {
+      font-size: 18px;
+      color: white;
+    }
+ 
+    .forecast-section {
+      width: 600px;
+      border: 3px solid white;
+      border-radius: 15px;
+      background-image: radial-gradient(circle, white, #71949f);
+      color: #003366;
+    }
+ 
+    .forecast-title {
+      color: #003366;
+    }
+ 
+    .day {
+      border: 2px solid #4682b4;
+      font-size: 17px;
+      color: #003366;
+    }
+ 
+    /* Group selector: styles both headings together */
+    h2, h3 {
+      color: white;
+    }
+ 
+    /* CSS animation using @keyframes */
+    @keyframes floatCloud {
+      from {
+        transform: translateY(0);
+      }
+ 
+      to {
+        transform: translateY(20px);
+      }
+    }
